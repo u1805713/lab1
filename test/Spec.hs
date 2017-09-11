@@ -20,6 +20,8 @@ main = hspec $ do
     describe "tripleV2" $ do
         prop "triples numbers" $ \(Positive n) ->
             let r = L.tripleV2 (n :: Int) in r `div` 3 == n && r `mod` 3 == 0
+        prop "behaves like triple" $ \(Positive n) ->
+            L.triple n == L.tripleV2 n
     describe "not" $ do
         it "negates booleans" $ L.not True == False && L.not False == True
     describe "and" $ do

@@ -10,6 +10,9 @@ module Lab1 where
 
 --------------------------------------------------------------------------------
 
+-- Some of the functions we will be defining as part of this lab are
+-- part of Haskell's standard library. The following line tells the compiler
+-- not to import them.
 import Prelude hiding (not, and, max)
 
 --------------------------------------------------------------------------------
