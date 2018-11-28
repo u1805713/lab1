@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
--- Functional Programming (CS256)                                             --
+-- Functional Programming (CS141)                                             --
 -- Lab 1: Getting started                                                     --
 --------------------------------------------------------------------------------
 -- Topics: Definitions, basic arithmetic, strings, booleans, functions,
@@ -19,7 +19,7 @@ import Prelude hiding (not, and, max)
 
 -- 0. Define `age` to be your age.
 
-age = 26
+age = 27
 
 -- 1. Define `name` to be your name.
 
