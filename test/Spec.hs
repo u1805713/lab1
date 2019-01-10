@@ -16,12 +16,12 @@ main :: IO ()
 main = hspec $ do
     describe "triple" $ do
         prop "triples numbers" $ \(Positive n) ->
-            let r = L.triple n in r `div` 3 == n && r `mod` 3 == 0
+            let r = L.triple (n :: Integer) in r `div` 3 == n && r `mod` 3 == 0
     describe "tripleV2" $ do
         prop "triples numbers" $ \(Positive n) ->
-            let r = L.tripleV2 (n :: Int) in r `div` 3 == n && r `mod` 3 == 0
+            let r = L.tripleV2 (n :: Integer) in r `div` 3 == n && r `mod` 3 == 0
         prop "behaves like triple" $ \(Positive n) ->
-            L.triple n == L.tripleV2 n
+            L.triple (n :: Integer) == L.tripleV2 n
     describe "not" $ do
         it "negates booleans" $ L.not True == False && L.not False == True
     describe "and" $ do
